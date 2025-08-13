@@ -1,6 +1,7 @@
-import { ThemeToggler } from './components/themeToggler';
-import { useTheme } from './hooks/useTheme';
+import { useTheme } from './hooks';
 import { Typography } from './ui';
+
+import { ThemeToggler } from './components/ThemeToggler';
 
 function App() {
     const { theme } = useTheme();

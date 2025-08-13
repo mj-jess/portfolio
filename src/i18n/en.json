@@ -1,0 +1,13 @@
+{
+    "hero": {
+        "title": "Hello, I'm Jess Pimentel",
+        "subtitle": ["Senior Front-End Developer", "Front-End Tech Lead"],
+        "description": "Building modern and scalable interfaces for high-impact web applications.",
+        "cta": "See Projects"
+    },
+    "navbar": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    }
+}

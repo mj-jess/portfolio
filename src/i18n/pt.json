@@ -1,0 +1,16 @@
+{
+    "hero": {
+        "title": "Oi, eu sou Jéssica Pimentel",
+        "subtitle": [
+            "Desenvolvedora Front-End Sênior",
+            "Líder Técnica de Front-End"
+        ],
+        "description": "Desenvolvendo interfaces modernas e escaláveis para aplicações web de alto impacto.",
+        "cta": "Ver Projetos"
+    },
+    "navbar": {
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Contato"
+    }
+}

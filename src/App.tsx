@@ -1,37 +1,19 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
+import { Typography } from './ui';
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <>
-            <div>
-                <a href="https://vite.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img
-                        src={reactLogo}
-                        className="logo react"
-                        alt="React logo"
-                    />
-                </a>
+            <div className="p-8 space-y-4">
+                <Typography.h1>Este é o H1</Typography.h1>
+                <Typography.h2>Este é o H2</Typography.h2>
+                <Typography.h3>Este é o H3</Typography.h3>
+                <Typography.h4>Este é o H4</Typography.h4>
+                <Typography.p>Este é um parágrafo (body text)</Typography.p>
+                <Typography.small className="block">
+                    Este é um texto pequeno
+                </Typography.small>
+                <Typography.caption>Este é um caption</Typography.caption>
             </div>
-            <h1 className="text-9xl">Vite + React</h1>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
         </>
     );
 }

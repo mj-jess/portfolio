@@ -1,8 +1,14 @@
+import { ThemeToggler } from './components/themeToggler';
+import { useTheme } from './hooks/useTheme';
 import { Typography } from './ui';
 
 function App() {
+    const { theme } = useTheme();
+
     return (
-        <>
+        <div className={`${theme.background} min-h-screen`}>
+            <ThemeToggler />
+
             <div className="p-8 space-y-4">
                 <Typography.h1>Este é o H1</Typography.h1>
                 <Typography.h2>Este é o H2</Typography.h2>
@@ -14,7 +20,7 @@ function App() {
                 </Typography.small>
                 <Typography.caption>Este é um caption</Typography.caption>
             </div>
-        </>
+        </div>
     );
 }
 

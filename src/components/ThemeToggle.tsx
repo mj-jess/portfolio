@@ -1,7 +1,7 @@
 import { FiSun, FiMoon } from 'react-icons/fi';
-import { useTheme } from '../hooks/useTheme';
+import { useTheme } from '../hooks';
 
-export const ThemeToggler = () => {
+export const ThemeToggle = () => {
     const { mode, toggleTheme } = useTheme();
 
     return (

@@ -1,6 +1,5 @@
 import type { ThemeColors } from './types';
 
-// theme/colors.ts
 export const lightTheme: ThemeColors = {
     background: 'bg-white',
     surface: 'bg-gray-100',

@@ -44,6 +44,7 @@ const Typography = {
     h4: createTypography('h4', typography.h4),
     p: createTypography('p', typography.p),
     span: createTypography('span', typography.span),
+    label: createTypography('label', typography.p, true),
     small: createTypography('small', typography.small, true),
     caption: createTypography('span', typography.caption, true),
 };

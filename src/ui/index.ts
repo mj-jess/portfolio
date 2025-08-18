@@ -1,3 +1,4 @@
 import Typography from './typography';
+import Dropdown from './dropdown';
 
-export { Typography };
+export { Dropdown, Typography };

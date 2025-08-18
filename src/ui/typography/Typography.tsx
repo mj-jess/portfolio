@@ -37,7 +37,7 @@ const typography = {
     caption: 'text-xs font-light leading-snug font-mono',
 };
 
-export const Typography = {
+const Typography = {
     h1: createTypography('h1', typography.h1),
     h2: createTypography('h2', typography.h2),
     h3: createTypography('h3', typography.h3),

@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect, type ReactNode } from 'react';
+
 import en from './en.json';
 import pt from './pt.json';
 

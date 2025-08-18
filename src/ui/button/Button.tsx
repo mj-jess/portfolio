@@ -1,20 +1,10 @@
-import { useMemo, type ReactNode } from 'react';
+import { useMemo } from 'react';
 import clsx from 'clsx';
+
 import { useTheme } from '../../hooks';
-
-import type { Color, Size, Variant } from './types';
 import { colors } from './colors';
-
-type ButtonProps = {
-    children: ReactNode;
-    size?: Size;
-    color?: Color;
-    variant?: Variant;
-    disabled?: boolean;
-    fullWidth?: boolean;
-    className?: string;
-    onClick?: () => void;
-};
+import type { ButtonProps, Color } from './types';
+import Typography from '../typography';
 
 export const Button = ({
     children,
@@ -110,7 +100,7 @@ export const Button = ({
                 className
             )}
         >
-            {children}
+            <Typography.span>{children}</Typography.span>
         </button>
     );
 };

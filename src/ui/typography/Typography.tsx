@@ -32,7 +32,7 @@ const typography = {
     h3: 'text-2xl font-semibold leading-snug font-heading',
     h4: 'text-xl font-semibold leading-snug font-heading',
     p: 'text-base font-normal leading-relaxed font-sans',
-    span: 'text-sm font-normal leading-relaxed font-sans',
+    span: 'text-sm leading-relaxed font-sans',
     small: 'text-sm font-normal leading-relaxed font-sans',
     caption: 'text-xs font-light leading-snug font-mono',
 };

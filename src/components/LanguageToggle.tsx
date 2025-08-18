@@ -6,7 +6,7 @@ export const LanguageToggle = () => {
 
     return (
         <div className="flex items-center">
-            <Dropdown>
+            <Dropdown className="w-auto">
                 <Dropdown.Trigger>{lang.toLocaleUpperCase()}</Dropdown.Trigger>
 
                 <Dropdown.Item onClick={() => setLang('en')}>EN</Dropdown.Item>

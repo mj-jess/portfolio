@@ -6,7 +6,11 @@ import React, {
     type ReactNode,
 } from 'react';
 import clsx from 'clsx';
+
 import { useTheme } from '../../hooks';
+import { Button } from '../button/Button';
+
+import type { ButtonProps } from '../button/types';
 
 type DropdownProps = {
     children: ReactNode;
@@ -14,16 +18,12 @@ type DropdownProps = {
     closeOnClick?: boolean;
 };
 
-type DropdownTriggerProps = {
+type DropdownTriggerProps = ButtonProps & {
     children: ReactNode;
-    className?: string;
-    onClick?: () => void;
 };
 
-type DropdownItemProps = {
+type DropdownItemProps = ButtonProps & {
     children: ReactNode;
-    onClick?: () => void;
-    className?: string;
 };
 
 const Dropdown = ({
@@ -31,6 +31,8 @@ const Dropdown = ({
     className,
     closeOnClick = true,
 }: DropdownProps) => {
+    const { theme } = useTheme();
+
     const [open, setOpen] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
 
@@ -86,7 +88,8 @@ const Dropdown = ({
             {open && (
                 <div
                     className={clsx(
-                        'absolute right-0 mt-2 w-40 rounded shadow-lg z-50 overflow-hidden',
+                        'absolute right-0 mt-2 w-40 rounded-md shadow-md z-60 overflow-hidden',
+                        theme.background,
                         className
                     )}
                 >
@@ -97,44 +100,34 @@ const Dropdown = ({
     );
 };
 
-const Trigger = ({ children, className, onClick }: DropdownTriggerProps) => {
-    const { theme } = useTheme();
+const Trigger = (props: DropdownTriggerProps) => {
+    const { children } = props;
 
     return (
-        <button
-            onClick={onClick}
-            className={clsx(
-                'px-4 py-2 rounded shadow font-medium transition',
-                theme.surface,
-                theme.text,
-                'hover:bg-gray-200 dark:hover:bg-gray-600',
-                className
-            )}
-        >
+        <Button variant="ghost" color="tertiary" {...props}>
             {children}
-        </button>
+        </Button>
     );
 };
 
 Trigger.displayName = 'DropdownTrigger';
 
-const Item = ({ children, className, onClick }: DropdownItemProps) => {
-    const { theme } = useTheme();
+const Item = (props: DropdownItemProps) => {
+    const { children, className } = props;
 
     return (
-        <button
-            onClick={onClick}
+        <Button
+            fullWidth
+            variant="ghost"
+            color="tertiary"
+            {...props}
             className={clsx(
-                'w-full text-left px-4 py-2 transition-colors',
-                'hover:bg-gray-100 dark:hover:bg-gray-700',
-                'first:rounded-t-md last:rounded-b-md',
-                theme.surface,
-                theme.text,
+                'first:rounded-b-none last:rounded-t-none',
                 className
             )}
         >
             {children}
-        </button>
+        </Button>
     );
 };
 

@@ -1,6 +1,6 @@
 import TypeWriter from 'typewriter-effect';
 
-import { Typography } from '../ui';
+import { Button, Typography } from '../ui';
 import { useTheme, useLang } from '../hooks';
 
 export const Hero = () => {
@@ -36,11 +36,7 @@ export const Hero = () => {
                     {hero.description}
                 </Typography.p>
 
-                <button
-                    className={`${theme.primaryBg} ${theme.text} px-6 py-3 rounded-md font-semibold hover:opacity-90 transition`}
-                >
-                    {hero.cta}
-                </button>
+                <Button>{hero.cta}</Button>
             </div>
         </section>
     );

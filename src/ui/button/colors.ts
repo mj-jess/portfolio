@@ -24,7 +24,7 @@ export const colors = {
             textOutline: 'text-gray-700',
             hoverBg: 'hover:bg-gray-300',
             border: 'border-gray-700',
-            hoverBorderBg: 'hover:bg-gray-100',
+            hoverBorderBg: 'hover:bg-gray-200',
             textHover: 'hover:text-gray-900',
         },
         info: {
@@ -89,7 +89,7 @@ export const colors = {
             textOutline: 'text-gray-400',
             hoverBg: 'hover:bg-gray-600',
             border: 'border-gray-400',
-            hoverBorderBg: 'hover:bg-gray-400',
+            hoverBorderBg: 'hover:bg-gray-700',
             textHover: 'hover:text-gray-100',
         },
         info: {

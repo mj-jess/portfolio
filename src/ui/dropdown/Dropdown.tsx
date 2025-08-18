@@ -31,7 +31,6 @@ const Dropdown = ({
     className,
     closeOnClick = true,
 }: DropdownProps) => {
-    const { theme } = useTheme();
     const [open, setOpen] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
 

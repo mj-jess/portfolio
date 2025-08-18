@@ -12,5 +12,10 @@
         "about": "Sobre",
         "projects": "Projetos",
         "contact": "Contato"
+    },
+    "languageDropdown": {
+        "selectLanguage": "Selecionar Idioma",
+        "english": "Inglês",
+        "portuguese": "Português"
     }
 }

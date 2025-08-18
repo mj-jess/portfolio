@@ -9,5 +9,10 @@
         "about": "About",
         "projects": "Projects",
         "contact": "Contact"
+    },
+    "languageDropdown": {
+        "selectLanguage": "Select Language",
+        "english": "English",
+        "portuguese": "Portuguese"
     }
 }

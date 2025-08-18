@@ -1,13 +1,16 @@
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { useTheme } from '../hooks';
+import { Button } from '../ui';
 
 export const ThemeToggle = () => {
     const { mode, toggleTheme } = useTheme();
 
     return (
-        <button
+        <Button
+            variant="ghost"
+            color="tertiary"
             onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            className="p-2 w-5 transition-colors"
             aria-label="Toggle theme"
         >
             {mode === 'dark' ? (
@@ -15,6 +18,6 @@ export const ThemeToggle = () => {
             ) : (
                 <FiMoon className="text-gray-900 w-5 h-5" />
             )}
-        </button>
+        </Button>
     );
 };

@@ -1,12 +1,11 @@
 import { useMemo } from 'react';
-import { useLang, useTheme } from '../hooks';
-import { Typography } from '../ui';
+import { useLang } from '../hooks';
+import { Button, Typography } from '../ui';
 
 import { ThemeToggle } from './ThemeToggle';
 import { LanguageToggle } from './LanguageToggle';
 
 export const Navbar = () => {
-    const { theme } = useTheme();
     const {
         t: { navbar },
     } = useLang();
@@ -18,28 +17,26 @@ export const Navbar = () => {
     }, [navbar]);
 
     return (
-        <nav
-            className={`${theme.surface} fixed top-0 left-0 w-full z-50 shadow-md`}
-        >
-            <div className="max-w-7xl mx-auto px-6 md:px-20 flex items-center justify-between h-16">
+        <nav className="fixed top-0 left-0 w-full z-50 shadow-lg backdrop-blur-[.5em]">
+            <div className="mx-auto px-6 md:px-20 flex items-center justify-between h-16">
                 <div className="flex-shrink-0 cursor-pointer">
                     <Typography.h2>JP</Typography.h2>
                 </div>
 
-                <div className="hidden md:flex space-x-8">
+                <div className="hidden md:flex">
                     {sections.map((section, i) => (
-                        <button
+                        <Button
                             key={i}
+                            variant="ghost"
+                            color="tertiary"
                             onClick={() =>
                                 document
                                     .getElementById(section)
                                     ?.scrollIntoView({ behavior: 'smooth' })
                             }
                         >
-                            <Typography.small>
-                                {navbar[section]}
-                            </Typography.small>
-                        </button>
+                            {navbar[section]}
+                        </Button>
                     ))}
                 </div>
 

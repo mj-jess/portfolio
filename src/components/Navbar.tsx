@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { useLang, useTheme } from '../hooks';
 import { Typography } from '../ui';
 
@@ -10,7 +11,11 @@ export const Navbar = () => {
         t: { navbar },
     } = useLang();
 
-    const sections = ['hero', 'about', 'projects', 'contact'];
+    const sections = useMemo(() => {
+        return Object.keys(navbar).filter((k) => k) as Array<
+            keyof typeof navbar
+        >;
+    }, [navbar]);
 
     return (
         <nav
@@ -32,7 +37,7 @@ export const Navbar = () => {
                             }
                         >
                             <Typography.small>
-                                {navbar[section as 'about']}
+                                {navbar[section]}
                             </Typography.small>
                         </button>
                     ))}

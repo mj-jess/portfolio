@@ -1,18 +1,30 @@
 {
+    "navbar": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+
+    "languageDropdown": {
+        "selectLanguage": "Select Language",
+        "english": "English",
+        "portuguese": "Portuguese"
+    },
+
     "hero": {
         "title": "Hello, I'm Jess Pimentel",
         "subtitle": ["Senior Front-End Developer", "Front-End Tech Lead"],
         "description": "Building modern and scalable interfaces for high-impact web applications.",
         "cta": "See Projects"
     },
-    "navbar": {
-        "about": "About",
-        "projects": "Projects",
-        "contact": "Contact"
-    },
-    "languageDropdown": {
-        "selectLanguage": "Select Language",
-        "english": "English",
-        "portuguese": "Portuguese"
+
+    "aboutMe": {
+        "title": "About me",
+        "description": "I'm a passionate Front-End Developer with over {{years}} years of experience building modern and scalable web applications. I specialize in React, TypeScript, and Next.js, and I started my career in the freelance market, where I learned to handle diverse projects, replicate prototypes exactly as designed, and deliver high-quality responsive solutions. I work with agile methodologies, value clean code, and foster a positive, collaborative work environment while continuously learning new technologies and improving my skills.",
+
+        "location": {
+            "label": "Location",
+            "text": "I'm based in Guarapuava, PR - Brazil, but I work remotely with teams worldwide."
+        }
     }
 }

@@ -2,6 +2,7 @@ import { useTheme } from './hooks';
 
 import { Hero } from './components/Hero';
 import { Navbar } from './components/Navbar';
+import { AboutMe } from './components/AboutMe';
 
 function App() {
     const { theme } = useTheme();
@@ -10,6 +11,7 @@ function App() {
         <div className={`${theme.background} min-h-screen`}>
             <Navbar />
             <Hero />
+            <AboutMe />
         </div>
     );
 }

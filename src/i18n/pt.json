@@ -1,4 +1,16 @@
 {
+    "navbar": {
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Contato"
+    },
+
+    "languageDropdown": {
+        "selectLanguage": "Selecionar Idioma",
+        "english": "Inglês",
+        "portuguese": "Português"
+    },
+
     "hero": {
         "title": "Oi, eu sou Jéssica Pimentel",
         "subtitle": [
@@ -8,14 +20,12 @@
         "description": "Desenvolvendo interfaces modernas e escaláveis para aplicações web de alto impacto.",
         "cta": "Ver Projetos"
     },
-    "navbar": {
-        "about": "Sobre",
-        "projects": "Projetos",
-        "contact": "Contato"
-    },
-    "languageDropdown": {
-        "selectLanguage": "Selecionar Idioma",
-        "english": "Inglês",
-        "portuguese": "Português"
+
+    "aboutMe": {
+        "title": "Sobre mim",
+        "description": "Sou uma desenvolvedora Front-End apaixonada com mais de {{years}} anos de experiência construindo aplicações web modernas e escaláveis. Especializo-me em React, TypeScript e Next.js, e venho do mercado freelancer, onde aprendi a lidar com diferentes demandas, replicar protótipos exatamente como o design pede e entregar soluções responsivas e de alta qualidade. Trabalho com metodologias ágeis, prezo por código limpo e valorizo um ambiente colaborativo e positivo, sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.",
+        "highlights": {
+            "location": "Localização"
+        }
     }
 }
